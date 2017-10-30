@@ -16,6 +16,7 @@ One of the main drawbacks that this website has is that it can't import question
 2. Setup a virtual environment for Python, activate it and install dependencies
 
 .. code-block:: bash
+
   virtualenv plickers_import
   cd plickers_import
   source bin/activate
@@ -33,12 +34,13 @@ One of the main drawbacks that this website has is that it can't import question
 5. Run the script
 
 .. code-block:: bash
+
   python plickers_import.p
 
 **Extra steps for windows users**
 
 1. Dowload and install `Cygwin <https://www.cygwin.com/>`__ During the install
-proceedure make sure to click on the word 'Default' next to Python. 
+proceedure make sure to click on the word 'Default' next to Python.
 
 2. Download and install `Firefox <https://www.mozilla.org/en-US/firefox/new>`__.
 
@@ -47,6 +49,7 @@ proceedure make sure to click on the word 'Default' next to Python.
 4. Start Cygwin and run these commands
 
 .. code-block:: bash
+
   easy_install pip
   easy_install virtualenv
 
