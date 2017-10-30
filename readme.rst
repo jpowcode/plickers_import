@@ -1,10 +1,5 @@
 Plickers Import
 ###############
-:date: 2017-10-30 21:16
-:tags: Plickers, Python, Selenium
-:category: Python
-:slug: plickers-import
-:status: published
 
 Plickers is a website designed for obtaining feedback from pupils in a classroom environment. The basic process is as follows
 
@@ -20,7 +15,11 @@ One of the main drawbacks that this website has is that it can't import question
 
 2. Setup a virtual environment for Python, activate it and install dependencies
 
-[gist:id=0b96a440de7a3ba0d05ca4755756344a,file=plickers]
+.. code-block:: bash
+  virtualenv plickers_import
+  cd plickers_import
+  source bin/activate
+  pip install selenium
 
 3. Put your Plickers username and password into the first two lines of the file login-details.txt Please make sure your password is not the same as for any other websites you use as it will be stored here in plain text which is not very secure.
 
@@ -30,19 +29,16 @@ One of the main drawbacks that this website has is that it can't import question
    * Column B should be an M for a multiple choice question and T for a True/False question
    * Column C contains the correct answer A, B, C or D for multiple choice or T or F for a True/False question
    * Columns D, E, F and G contain the answers for the questions
-   
+
 5. Run the script
 
-[gist:id=0b96a440de7a3ba0d05ca4755756344a,file=run_script]
+.. code-block:: bash
+  python plickers_import.p
 
 **Extra steps for windows users**
 
 1. Dowload and install `Cygwin <https://www.cygwin.com/>`__ During the install
-proceedure make sure to click on the word 'Default' next to Python. See the
-image below.
-
-
-|small-plickers|
+proceedure make sure to click on the word 'Default' next to Python. 
 
 2. Download and install `Firefox <https://www.mozilla.org/en-US/firefox/new>`__.
 
@@ -50,12 +46,8 @@ image below.
 
 4. Start Cygwin and run these commands
 
-[gist:id=0b96a440de7a3ba0d05ca4755756344a,file=cygwin]
+.. code-block:: bash
+  easy_install pip
+  easy_install virtualenv
 
 5. Now follow the steps above
-
-.. |small-plickers| image:: {filename}/images/small-plickers.jpg
-   :class: aligncenter wp-image-203
-   :width: 240px
-   :height: 135px
-   :target: {filename}/images/small-plickers.jpg
